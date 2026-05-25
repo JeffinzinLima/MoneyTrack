@@ -1,4 +1,59 @@
 MoneyTrack
+SWAGGER: http://localhost:8080/swagger-ui/index.html#/
+
+## 🚀 Como Executar o Projeto
+
+### Pré-requisitos
+
+- Java 17+
+- Maven
+- MySQL
+
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/JeffinzinLima/MoneyTrack.git
+cd MoneyTrack
+```
+
+### 2. Criar o banco de dados
+
+```sql
+CREATE DATABASE moneytrack;
+```
+
+### 3. Configurar o banco
+
+No arquivo `application.properties`, ajuste:
+
+```properties
+spring.datasource.username=seu_usuario
+spring.datasource.password=sua_senha
+```
+
+### 4. Executar a aplicação
+
+```bash
+mvn spring-boot:run
+```
+
+### 5. Acessar a API
+
+```text
+http://localhost:8080
+```
+
+### 6. Documentação Swagger
+
+```text
+http://localhost:8080/swagger-ui/index.html
+```
+
+## ✅ Observação
+
+As tabelas são criadas automaticamente pelo Spring Boot ao iniciar a aplicação.
+
+INFORMAÇÕES:
 
 API REST desenvolvida com Spring Boot para gerenciamento financeiro pessoal. O sistema permite cadastrar usuários, registrar transações financeiras e consultar informações analíticas sobre receitas, despesas e saldo.
 
